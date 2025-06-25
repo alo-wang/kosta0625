@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MemberController {
 	@GetMapping("/")
 	public String list() {
-		return "customer list11";
+		return "customer list112";
 	}
 }
