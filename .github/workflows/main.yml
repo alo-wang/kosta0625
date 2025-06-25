@@ -1,4 +1,4 @@
-name: Deploy To EC2 # 이름을 마음대로 지정한것
+name: Deploy To EC2
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  deploy: # 배포하라
-    runs-on: ubuntu-latest # 우분투에서 배포한다.
+  deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: SSH로 EC2에 접속하기
         uses: appleboy/ssh-action@v1.0.3 # 공개된 작업물 중에 이 걸 가지고 ec2에 연결해서 배포 하겠다.
